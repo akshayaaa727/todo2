@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>To-do list</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="stats-container">
+            <div class="details">
+                <h1>To Do App</h1>
+                <p>Keep it up!</p>
+                <div id="progressBar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+            <div class="stats-numbers">
+                <p id="numbers">0/0</p>
+            </div>
+        </div>
+        <form id="taskForm">
+            <input type="text" id="taskInput" placeholder="Write your task"/>
+            <input type="date" id="deadlineInput" placeholder="Set deadline"/>
+            <select id="priorityInput">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button id="newTask" type="submit">+</button>
+        </form>
+        <ul id="task-list"></ul>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
